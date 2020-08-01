@@ -1,0 +1,8 @@
+
+
+
+
+
+function command_not_found_handle () {
+     echo "lol"
+}
