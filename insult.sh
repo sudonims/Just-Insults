@@ -1,3 +1,4 @@
+
 function command_not_found_handle () {
     insults=( 
         "Wow !! another wrong command... just rm -rf yourself dude"
