@@ -8,3 +8,17 @@ OR just do it the linux way,
     ```
     wget -O insults https://raw.githubusercontent.com/Nim1304/Just-Insults/master/insult.sh && cat insults >> ~/.bashrc && rm insults
     ```
+
+### For Zsh
+
+```
+1. nano ~/.zshrc
+
+2. Create the following function in the zshrc file
+
+function command_not_found_handler () {
+	* COPY THE CODE HERE *
+}
+
+3. Close terminal and restart again
+```
