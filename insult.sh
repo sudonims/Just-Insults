@@ -1,4 +1,3 @@
-
 function command_not_found_handle () {
     insults=( 
         "Wow !! another wrong command... just rm -rf yourself dude"
@@ -10,6 +9,6 @@ function command_not_found_handle () {
         "Use Windows, you dumb person"
         "Disappointed but not surprised" 
         )
-    
-    echo ${insults[$(( ( RANDOM % 8 ) ))]}
+    insults_len=${#insults[*]}
+    echo ${insults[$(( ( RANDOM % insults_len ) ))]}
 }
