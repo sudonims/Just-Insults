@@ -9,6 +9,9 @@ function command_not_found_handler () {
         "Use Windows, you dumb person"
         "Disappointed but not surprised" 
         )
-    insults_len=${#insults[*]}
-    echo ${insults[$(( ( RANDOM % insults_len ) ))]}
+    insults_len=${#insults[@]}
+    RAND=$(od -An -N2 -tu2 < /dev/urandom | awk '{print $1}' | tr -d '\n')
+    index=$((RAND % insults_len))
+    ((++index))
+    echo "${insults[$index]}"
 }
